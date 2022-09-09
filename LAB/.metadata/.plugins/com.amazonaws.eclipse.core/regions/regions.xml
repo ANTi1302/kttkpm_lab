@@ -611,6 +611,36 @@
         </services>
     </region>
     <region>
+        <displayname>Middle East (UAE)</displayname>
+        <systemname>me-central-1</systemname>
+        <flag-icon>flags/aws.png</flag-icon>
+        <min-toolkit-version>1.6.2.0</min-toolkit-version>
+        <services>
+            <service name="AutoScaling">https://autoscaling.me-central-1.amazonaws.com</service>
+            <service name="CloudFormation">https://cloudformation.me-central-1.amazonaws.com</service>
+            <service name="CloudFront" authregion="us-east-1">https://cloudfront.amazonaws.com</service>
+            <service name="CloudWatch">https://monitoring.me-central-1.amazonaws.com</service>
+            <service name="CloudWatchEvents">https://events.me-central-1.amazonaws.com</service>
+            <service name="CodeDeploy">https://codedeploy.me-central-1.amazonaws.com</service>
+            <service name="DynamoDB">https://dynamodb.me-central-1.amazonaws.com</service>
+            <service name="DynamoDBStream">https://streams.dynamodb.me-central-1.amazonaws.com</service>
+            <service name="EC2">https://ec2.me-central-1.amazonaws.com</service>
+            <service name="ECR" authregion="me-central-1">https://api.ecr.me-central-1.amazonaws.com</service>
+            <service name="ECS">https://ecs.me-central-1.amazonaws.com</service>
+            <service name="ELB">https://elasticloadbalancing.me-central-1.amazonaws.com</service>
+            <service name="IAM" authregion="us-east-1">https://iam.amazonaws.com</service>
+            <service name="KMS">https://kms.me-central-1.amazonaws.com</service>
+            <service name="Kinesis">https://kinesis.me-central-1.amazonaws.com</service>
+            <service name="Lambda">https://lambda.me-central-1.amazonaws.com</service>
+            <service name="Logs">https://logs.me-central-1.amazonaws.com</service>
+            <service name="RDS">https://rds.me-central-1.amazonaws.com</service>
+            <service name="S3">https://s3.me-central-1.amazonaws.com</service>
+            <service name="SNS">https://sns.me-central-1.amazonaws.com</service>
+            <service name="SQS">https://sqs.me-central-1.amazonaws.com</service>
+            <service name="XRay">https://xray.me-central-1.amazonaws.com</service>
+        </services>
+    </region>
+    <region>
         <displayname>Middle East (Bahrain)</displayname>
         <systemname>me-south-1</systemname>
         <flag-icon>flags/aws.png</flag-icon>
