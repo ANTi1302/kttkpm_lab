@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="org.apache.log4j.BasicConfigurator"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.User"/>
+    <fullyQualifiedTypeName name="com.example.spring_boot_api_jwt_ad.controller.AuthController"/>
+    <fullyQualifiedTypeName name="com.example.spring_boot_api_jwt_ad.entity.Permission"/>
+    <fullyQualifiedTypeName name="com.example.spring_boot_api_jwt_ad.entity.User"/>
+    <fullyQualifiedTypeName name="com.example.spring_boot_api_jwt_ad.entity.Role"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.example.spring_boot_api_jwt_ad.entity.BaseEntity"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
 </qualifiedTypeNameHistroy>
