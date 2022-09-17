@@ -35,7 +35,4 @@
 <p align="center">
   <img src="/image/docker_construster.png" alt="" width="1000" height="480" >
 </p>
-<h1> localhost docker: 8085 </h1>
-<p align="center">
-  <img src="/image/docker_run.png" alt="" width="1000" height="480" >
-</p>
+
