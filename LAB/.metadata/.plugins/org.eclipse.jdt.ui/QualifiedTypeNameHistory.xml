@@ -15,4 +15,6 @@
     <fullyQualifiedTypeName name="com.example.spring_boot_api_jwt_ad.entity.User"/>
     <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
     <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration"/>
+    <fullyQualifiedTypeName name="org.springframework.security.access.prepost.PostAuthorize"/>
+    <fullyQualifiedTypeName name="org.springframework.security.access.prepost.PreAuthorize"/>
 </qualifiedTypeNameHistroy>
