@@ -27,3 +27,15 @@
 <p align="center">
   <img src="/image/lab3_2.png" alt="" width="1000" height="480" >
 </p>
+<h1> Lab 1-n: Docker SpringBoot Run </h1>
+
+<p align="center">
+  <img src="/image/docker_image.png" alt="" width="1000" height="480" >
+</p>
+<p align="center">
+  <img src="/image/docker_construster.png" alt="" width="1000" height="480" >
+</p>
+<h1> localhost docker: 8085 </h1>
+<p align="center">
+  <img src="/image/docker_run.png" alt="" width="1000" height="480" >
+</p>
