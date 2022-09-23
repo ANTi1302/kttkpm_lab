@@ -15,12 +15,13 @@ import javax.persistence.Table;
 public class ChungNhan implements Serializable{
 	@Id
 	@ManyToOne
-	@JoinColumn(name = "MaMB")
-	private MayBay MaMB;
-	@Id
-	@ManyToOne
 	@JoinColumn(name = "MaNV")
 	private NhanVien maNV;
+	@Id
+	@ManyToOne
+	@JoinColumn(name = "MaMB")
+	private MayBay MaMB;
+	
 	public MayBay getMaMB() {
 		return MaMB;
 	}

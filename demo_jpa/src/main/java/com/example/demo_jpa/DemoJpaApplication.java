@@ -51,8 +51,17 @@ public class DemoJpaApplication {
 				System.out.println("Ma nhan vien la: "+objects[0]);
 			}
 //			10.	Cho biết các nhân viên có thể lái máy bay có mã số 747.
+			for (Object[] objects : chungNhanDao.listNV747()) {
+				System.out.println("Ma nhan vien la: "+objects[0]+", MaMB: "+objects[1]+", Ten: "+objects[2]+", Luong: "+objects[3]);
+			}
 //			11.	Cho biết mã số của các loại máy bay mà nhân viên có họ Nguyễn có thể lái.
+			for (Object[] objects : chungNhanDao.listMaMBOfNguyen("Nguyen")) {
+				System.out.println("Ma may bay la: "+objects[0]);
+			}
 //			12.	Cho biết mã số của các phi công vừa lái được Boeing vừa lái được Airbus.
+			for (Object[] objects : chungNhanDao.listMaMVOfLoaiMB("Boeing","Airbus")) {
+				System.out.println("Ma nhan vien la: "+objects[0]);
+			}
 //			13.	Cho biết các loại máy bay có thể thực hiện chuyến bay VN280.
 //			14.	Cho biết các chuyến bay có thể ñược thực hiện bởi máy bay Airbus A320.
 //			15.	Cho biết tên của các phi công lái máy bay Boeing.
