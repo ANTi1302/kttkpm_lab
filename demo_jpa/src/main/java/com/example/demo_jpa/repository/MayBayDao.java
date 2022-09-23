@@ -18,4 +18,5 @@ public interface MayBayDao extends CrudRepository<MayBay, Integer>{
 //	select count(*)from maybay where Loai like '%Boeing%'
 	@Query(value = "select count(*)from maybay where Loai like '%Boeing%'",nativeQuery = true)
 	public int numMayBayBeoing();
+
 }

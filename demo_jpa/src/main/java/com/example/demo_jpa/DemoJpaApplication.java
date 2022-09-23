@@ -63,8 +63,17 @@ public class DemoJpaApplication {
 				System.out.println("Ma nhan vien la: "+objects[0]);
 			}
 //			13.	Cho biết các loại máy bay có thể thực hiện chuyến bay VN280.
+			for (Object[] objects : chungNhanDao.listLoaiByMaCB("VN280")) {
+				System.out.println("Loai may bay : "+objects[0]);
+			}
 //			14.	Cho biết các chuyến bay có thể ñược thực hiện bởi máy bay Airbus A320.
+			for (Object[] objects : chungNhanDao.listChuyenBayByLoai("Airbus A320")) {
+				System.out.println("MaCB: "+objects[0]+", GaDi: "+objects[1]+", GaDen: "+objects[2]+", DoDai: "+objects[3]+", GioDi: "+objects[4]+", GioDen: "+objects[5]+", ChiPhi: "+objects[6]);
+			}
 //			15.	Cho biết tên của các phi công lái máy bay Boeing.
+			for (Object[] objects : chungNhanDao.listTenNVByLoai("Boeing")) {
+				System.out.println("Ten nhan vien : "+objects[0]);
+			}
 //			16.	Với mỗi loại máy bay có phi công lái cho biết mã số, loại máy báy và tổng số phi công có thể lái loại máy bay đó.
 //			17.	Giả sử một hành khách muốn đi thẳng từ ga A đến ga B rồi quay trở về ga A. Cho biết các đường bay nào có thể đáp ứng yêu cầu này.
 //
