@@ -17,7 +17,7 @@ public class ChungNhan implements Serializable{
 	@ManyToOne
 	@JoinColumn(name = "MaMB")
 	private MayBay MaMB;
-	
+	@Id
 	@ManyToOne
 	@JoinColumn(name = "MaNV")
 	private NhanVien maNV;

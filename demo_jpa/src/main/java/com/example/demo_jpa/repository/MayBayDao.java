@@ -12,4 +12,10 @@ import com.example.demo_jpa.entity.MayBay;
 public interface MayBayDao extends CrudRepository<MayBay, Integer>{
 	@Query(value = "select *from maybay where TamBay> :index",nativeQuery = true)
 	public List<MayBay> listTamBay10000(@Param(value = "index")int index);
+//	select *from maybay where Loai like'%Boeing%'
+	@Query(value = "select *from maybay where Loai like %:loai%",nativeQuery = true)
+	public List<MayBay> listLoaiBoeing(@Param(value = "loai")String loai);
+//	select count(*)from maybay where Loai like '%Boeing%'
+	@Query(value = "select count(*)from maybay where Loai like '%Boeing%'",nativeQuery = true)
+	public int numMayBayBeoing();
 }
