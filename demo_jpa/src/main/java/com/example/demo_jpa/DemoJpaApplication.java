@@ -22,13 +22,7 @@ public class DemoJpaApplication {
 	@Autowired
 	private ChuyenBayDao chuyenBayDao;
 
-	public ChuyenBay getChuyenBayByID(String maCB) {
-		ChuyenBay chuyenBay = chuyenBayDao.findById(maCB).orElse(null);
-		if (Objects.isNull(chuyenBay)) {
-            return null;
-        }
-		return chuyenBay;
-	}
+	
 	@Bean
 	public CommandLineRunner run(ChuyenBayDao chuyenBayDao) {
 		return(ArgsAnnotationPointcut ->{
