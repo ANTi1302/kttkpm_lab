@@ -68,4 +68,15 @@ public interface ChungNhanDao extends CrudRepository<ChungNhan, String>{
 			+ "				   where maybay.Loai like %:loai% \r\n"
 			+ "GROUP BY nhanvien.Ten",nativeQuery = true)
 	public List<Object[]> listTenNVByLoai(@Param(value = "loai")String loai);
+//	SELECT maybay.MaMB, maybay.Loai,count( nhanvien.MaNV)
+//	FROM     chungnhan INNER JOIN
+//	                  maybay ON chungnhan.MaMB = maybay.MaMB INNER JOIN
+//	                  nhanvien ON chungnhan.MaNV = nhanvien.MaNV
+//	GROUP BY maybay.MaMB, maybay.Loai
+	@Query(value = "SELECT maybay.MaMB, maybay.Loai,count( nhanvien.MaNV)\r\n"
+			+ "FROM     chungnhan INNER JOIN\r\n"
+			+ "                  maybay ON chungnhan.MaMB = maybay.MaMB INNER JOIN\r\n"
+			+ "                  nhanvien ON chungnhan.MaNV = nhanvien.MaNV\r\n"
+			+ "GROUP BY maybay.MaMB, maybay.Loai",nativeQuery = true)
+	public List<Object[]> listMayBayAndCountNV();
 }

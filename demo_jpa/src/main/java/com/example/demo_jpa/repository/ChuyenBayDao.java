@@ -23,4 +23,16 @@ public interface ChuyenBayDao extends JpaRepository<ChuyenBay, String> {
 //	select count(*)from chuyenbay where GaDi like 'SGN'
 	@Query(value = "select count(*)from chuyenbay where GaDi like 'SGN'",nativeQuery = true)
 	public int numChuyenBaySGN();
+//	select * from chuyenbay where GaDen in  (select GaDi from chuyenbay ) and ( GaDi in  (select GaDen from chuyenbay ))
+	@Query(value = "select * from chuyenbay where GaDen in  (select GaDi from chuyenbay ) and ( GaDi in  (select GaDen from chuyenbay ))",nativeQuery = true)
+	public List<ChuyenBay> listABA();
+//	select GaDi,count(GaDi )from chuyenbay group by GaDi
+	@Query(value = "select GaDi,count(GaDi )from chuyenbay group by GaDi",nativeQuery = true)
+	public List<Object[]> listGroupGaDi();
+//	select * from chuyenbay where GioDi <'12:00:00'
+	@Query(value = "select * from chuyenbay where GioDi <'12:00:00'",nativeQuery = true)
+	public List<ChuyenBay> list1200();
+//	select GaDi,COUNT(GaDi) from chuyenbay where GioDi <'12:00:00' group by GaDi
+	@Query(value = "select GaDi,COUNT(GaDi) from chuyenbay where GioDi <'12:00:00' group by GaDi",nativeQuery = true)
+	public List<Object[]> list1200GroupGaDi();
 }
