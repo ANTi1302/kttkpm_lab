@@ -15,20 +15,24 @@ import org.springframework.context.annotation.Bean;
 
 import com.example.demo_jpa.entity.ChuyenBay;
 import com.example.demo_jpa.repository.ChuyenBayDao;
+import com.example.demo_jpa.repository.MayBayDao;
 
 @SpringBootApplication
 @org.springframework.transaction.annotation.Transactional
 public class DemoJpaApplication {
-	@Autowired
-	private ChuyenBayDao chuyenBayDao;
-
-	
+//	@Autowired
+//	private ChuyenBayDao chuyenBayDao;
+//	@Autowired
+//	private MayBayDao mayBayDao;
 	@Bean
-	public CommandLineRunner run(ChuyenBayDao chuyenBayDao) {
+	public CommandLineRunner run(ChuyenBayDao chuyenBayDao,MayBayDao mayBayDao) {
 		return(ArgsAnnotationPointcut ->{
 			System.out.println((chuyenBayDao.findAll()));
+			System.out.println((chuyenBayDao.listChuyenBayDAD("DAD")));
+			System.out.println((mayBayDao.listTamBay10000(10000)));
 		});
 	}
+	
 	public static void main(String[] args) {
 		SpringApplication.run(DemoJpaApplication.class, args);
 	}

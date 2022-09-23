@@ -15,18 +15,17 @@ import javax.persistence.Table;
 public class MayBay implements Serializable{
 
 	@Id
-    @GeneratedValue
-	private int MaMB;
+	private Integer MaMB;
 	@Column(columnDefinition = "varchar(50)")
 	private String Loai;
-	@Column()
+	@Column(name = "TamBay")
 	private int TamBay;
 	@OneToMany(mappedBy = "MaMB")
 	private List<ChungNhan> chungNhan;
-	public int getMaMB() {
+	public Integer getMaMB() {
 		return MaMB;
 	}
-	public void setMaMB(int maMB) {
+	public void setMaMB(Integer maMB) {
 		MaMB = maMB;
 	}
 	public String getLoai() {
@@ -41,7 +40,7 @@ public class MayBay implements Serializable{
 	public void setTamBay(int tamBay) {
 		TamBay = tamBay;
 	}
-	public MayBay(int maMB, String loai, int tamBay) {
+	public MayBay(Integer maMB, String loai, int tamBay) {
 		super();
 		MaMB = maMB;
 		Loai = loai;

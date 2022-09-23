@@ -1,5 +1,6 @@
 package com.example.demo_jpa.service;
 
+import java.util.List;
 import java.util.Objects;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,14 +13,11 @@ import com.example.demo_jpa.repository.ChuyenBayDao;
 public class ChuyenBayImpl implements ChuyenBayService{
 	@Autowired
 	private ChuyenBayDao chuyenBayDao;
-
 	@Override
-	public ChuyenBay getChuyenBayByID(String maCB) {
-		ChuyenBay chuyenBay = chuyenBayDao.findById(maCB).orElse(null);
-		if (Objects.isNull(chuyenBay)) {
-            return null;
-        }
-		return chuyenBay;
+	public List<ChuyenBay> listChuyenBayDAD() {
+		List<ChuyenBay> chuyenBays = chuyenBayDao.listChuyenBayDAD("DAD");
+		
+		return chuyenBays;
 	}
 
 }
