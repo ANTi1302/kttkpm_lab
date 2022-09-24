@@ -35,4 +35,10 @@ public interface ChuyenBayDao extends JpaRepository<ChuyenBay, String> {
 //	select GaDi,COUNT(GaDi) from chuyenbay where GioDi <'12:00:00' group by GaDi
 	@Query(value = "select GaDi,COUNT(GaDi) from chuyenbay where GioDi <'12:00:00' group by GaDi",nativeQuery = true)
 	public List<Object[]> list1200GroupGaDi();
+//	SELECT * FROM chuyenbay WHERE chuyenbay.DoDai < ( SELECT MAX(maybay.TamBay) FROM maybay WHERE maybay.Loai LIKE ('%Boeing%') )
+	@Query(value = "SELECT * FROM chuyenbay WHERE chuyenbay.DoDai < ( SELECT MAX(maybay.TamBay) FROM maybay WHERE maybay.Loai LIKE (%:loai%) )",nativeQuery = true)
+	public List<Object[]> listMaxTamBayOfBoeing(@Param(value = "loai")String loai);
+//	SELECT chuyenbay.GaDi, SUM(chuyenbay.ChiPhi) as total FROM chuyenbay GROUP BY(chuyenbay.GaDi)
+	@Query(value = "SELECT chuyenbay.GaDi, SUM(chuyenbay.ChiPhi) as total FROM chuyenbay GROUP BY(chuyenbay.GaDi)",nativeQuery = true)
+	public List<Object[]> listSumChiPhi();
 }

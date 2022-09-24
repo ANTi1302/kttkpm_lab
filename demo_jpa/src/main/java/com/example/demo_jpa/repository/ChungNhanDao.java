@@ -79,4 +79,7 @@ public interface ChungNhanDao extends CrudRepository<ChungNhan, String>{
 			+ "                  nhanvien ON chungnhan.MaNV = nhanvien.MaNV\r\n"
 			+ "GROUP BY maybay.MaMB, maybay.Loai",nativeQuery = true)
 	public List<Object[]> listMayBayAndCountNV();
+//	SELECT chungnhan.MaNV FROM chungnhan GROUP BY(chungnhan.MaNV) HAVING COUNT(chungnhan.MaMB) = 3
+	@Query(value = "SELECT chungnhan.MaNV FROM chungnhan GROUP BY(chungnhan.MaNV) HAVING COUNT(chungnhan.MaMB) = 3",nativeQuery = true)
+	public List<Object[]> listNVHavingMaMB3();
 }

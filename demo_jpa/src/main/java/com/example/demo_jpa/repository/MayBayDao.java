@@ -27,5 +27,12 @@ public interface MayBayDao extends CrudRepository<MayBay, Integer>{
 			+ "                  nhanvien ON chungnhan.MaNV = nhanvien.MaNV\r\n"
 			+ "GROUP BY nhanvien.MaNV",nativeQuery = true)
 	public List<Object[]> listNVOfMayBay();
+//	SELECT chungnhan.MaNV,MAX(maybay.TamBay) FROM chungnhan INNER JOIN maybay on maybay.MaMB = chungnhan.MaMB 
+//			GROUP BY(chungnhan.MaNV)
+//			HAVING COUNT(chungnhan.MaMB) > 3 
+	@Query(value = "SELECT chungnhan.MaNV,MAX(maybay.TamBay) FROM chungnhan INNER JOIN maybay on maybay.MaMB = chungnhan.MaMB \r\n"
+			+ "GROUP BY(chungnhan.MaNV)\r\n"
+			+ "HAVING COUNT(chungnhan.MaMB) > 3 ",nativeQuery = true)
+	public List<Object[]> listMaMBMAX3AndTamBay();
 
 }

@@ -90,7 +90,9 @@ public class DemoJpaApplication {
 				System.out.println("GaDi: " + objects[0] + ", So luong chuyen khoi hanh: " + objects[1]);
 			}
 //			19.	Với mỗi ga có chuyến  bay xuất phát từ đó cho biết tổng chi phí phải trả cho phi công lái các chuyến bay khởi hành từ ga đó.
-			
+			for (Object[] objects : chuyenBayDao.listSumChiPhi()) {
+				System.out.println("GaDi: " + objects[0] + ", Total: " + objects[1]);
+			}
 //			20.	Cho biết danh sách các chuyến bay có thể khởi hành trước 12:00 ??? 12pm or 12am
 			System.out.println((chuyenBayDao.list1200()));
 //			21. Với mỗi địa điểm xuất phát cho biết có bao nhiêu chuyến bay có thể khởi hành trước 12:00.
@@ -98,9 +100,13 @@ public class DemoJpaApplication {
 				System.out.println("GaDi: " + objects[0] + ", So luong chuyen khoi hanh: " + objects[1]);
 			}
 //			22.	Cho biết mã số của các phi công chỉ lái được 3 loại máy bay
-			
+			for (Object[] objects : chungNhanDao.listNVHavingMaMB3()) {
+				System.out.println("MaNV: " + objects[0] );
+			}
 //			23.	Với mỗi phi công có thể lái nhiều hơn 3 loại máy bay, cho biết mã số phi công và tầm bay lớn nhất của các loại máy bay mà phi công đó có thể lái.
-			
+			for (Object[] objects : mayBayDao.listMaMBMAX3AndTamBay()) {
+				System.out.println("MaNV: " + objects[0] + ", Tam bay lon nhat: " + objects[1]);
+			}
 //			24.	Với mỗi phi công cho biết mã số phi công và tổng số loại máy bay mà phi công đó có thể lái.
 			for (Object[] objects : mayBayDao.listNVOfMayBay()) {
 				System.out.println("MaNV: " + objects[0] + ", Tong so may bay: " + objects[1]);
@@ -116,7 +122,9 @@ public class DemoJpaApplication {
 //			27.	Cho biết tổng số lương phải trả cho các phi công.
 			System.out.println(("Sum of Luong cua NV: " + nhanVienDao.sumLuongNV()));
 //			28.	Tìm các chuyến bay có thể được thực hiện bởi tất cả các loại máy bay Boeing.
-
+			for (Object[] objects : chuyenBayDao.listMaxTamBayOfBoeing("Boeing")) {
+				System.out.println("MaCB: " + objects[0] + ", GaDi: " + objects[1] + ", GaDen: " + objects[2]+ ", DoDai: " + objects[3]+ ", GioDi: " + objects[4]+ ", GioDen: " + objects[5]+ ", ChiPhi: " + objects[6]);
+			}
 
 		});
 	}
