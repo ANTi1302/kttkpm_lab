@@ -18,5 +18,14 @@ public interface MayBayDao extends CrudRepository<MayBay, Integer>{
 //	select count(*)from maybay where Loai like '%Boeing%'
 	@Query(value = "select count(*)from maybay where Loai like '%Boeing%'",nativeQuery = true)
 	public int numMayBayBeoing();
+//	SELECT nhanvien.MaNV,count(chungnhan.MaMB)
+//	FROM     chungnhan INNER JOIN
+//	                  nhanvien ON chungnhan.MaNV = nhanvien.MaNV
+//	GROUP BY nhanvien.MaNV
+	@Query(value = "SELECT nhanvien.MaNV,count(chungnhan.MaMB)\r\n"
+			+ "FROM     chungnhan INNER JOIN\r\n"
+			+ "                  nhanvien ON chungnhan.MaNV = nhanvien.MaNV\r\n"
+			+ "GROUP BY nhanvien.MaNV",nativeQuery = true)
+	public List<Object[]> listNVOfMayBay();
 
 }
