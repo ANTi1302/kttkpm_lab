@@ -3,12 +3,13 @@
 
 ## 1. About this lab
 
-- [x]  [**ActiveMQDemo**](./LAB/ActiveMQDemo/)
-- [x] [**SpringBootJWT**](./springboot_jpa_docker/spring_boot_api_jwt_ad-refresh_token_branch/)
-- [x] [**Box_Chat**](./LAB/Client-Server_Demo/)
-- [x] [**SpringBoot_JPA**](./demo_jpa)
+- [x]  [**ActiveMQDemo**](#1-activemqdemo)
+- [x] [**Box_Chat**](#-lab-1-n-box-chat-)
+- [x] [**SpringBootJWT**](#-lab-1-n-springboot-jwt-)
+- [x] [**SpringBoot_JPA**](#-lab-1-n-springboot-jpa-)
 - [ ] ...
 
+### 1. ActiveMQDemo
 <h1> Lab 1-n </h1>
 
 - Source: [**ActiveMQDemo**](./LAB/ActiveMQDemo/)
