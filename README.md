@@ -3,14 +3,13 @@
 
 ## 1. About this lab
 
-- [x]  [**ActiveMQDemo**](#1-activemqdemo)
+- [x]  [**ActiveMQDemo**](#-lab-1-n-activemqdemo-)
 - [x] [**Box_Chat**](#-lab-1-n-box-chat-)
 - [x] [**SpringBootJWT**](#-lab-1-n-springboot-jwt-)
 - [x] [**SpringBoot_JPA**](#-lab-1-n-springboot-jpa-)
 - [ ] ...
 
-### 1. ActiveMQDemo
-<h1> Lab 1-n </h1>
+<h1> Lab 1-n: ActiveMQDemo </h1>
 
 - Source: [**ActiveMQDemo**](./LAB/ActiveMQDemo/)
 
