@@ -1,0 +1,23 @@
+package com.example.flightsdatajpa.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.flightsdatajpa.entity.ChuyenBay;
+import com.example.flightsdatajpa.service.ChuyenBayService;
+
+@RestController
+public class RestFullAPI {
+
+	@Autowired
+	private ChuyenBayService chuyenBayService;
+	
+	@GetMapping("/chuyen-bay")
+	public List<ChuyenBay> findAllChuyenBay() {
+		List<ChuyenBay> dsChuyenBay = chuyenBayService.getAllChuyenBay();
+		return dsChuyenBay;
+	}
+}

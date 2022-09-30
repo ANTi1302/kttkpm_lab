@@ -51,7 +51,7 @@ public interface ChungNhanDao extends CrudRepository<ChungNhan, String>{
 	public List<Object[]> listMaMVOfLoaiMB(@Param(value = "loai1")String loai1,@Param(value = "loai2")String loai2);
 //	select Loai from maybay where TamBay < (select DoDai from chuyenbay where MaCB like 'VN280')
 	@Query(value = "select Loai from maybay where TamBay < (select DoDai from chuyenbay where MaCB like :maCB)",nativeQuery = true)
-	public List<Object[]> listLoaiByMaCB(@Param(value = "maCB")String maCB);
+	public List<Object[]>listLoaiByMaCB(@Param(value = "maCB")String maCB);
 //	select * from chuyenbay where DoDai < (select TamBay from maybay where Loai like 'Airbus A320')
 	@Query(value = "select * from chuyenbay where DoDai < (select TamBay from maybay where Loai like :loai)",nativeQuery = true)
 	public List<Object[]> listChuyenBayByLoai(@Param(value = "loai")String loai);

@@ -1,4 +1,4 @@
-package com.example.demo_jpa.entity;
+ package com.example.demo_jpa.entity;
 
 import java.io.Serializable;
 import java.util.List;

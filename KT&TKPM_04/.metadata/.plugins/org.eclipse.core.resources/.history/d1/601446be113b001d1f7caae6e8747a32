@@ -1,0 +1,5 @@
+package com.example.flightsdatajpa.entity;
+
+public class ChungNhan_PK {
+
+}

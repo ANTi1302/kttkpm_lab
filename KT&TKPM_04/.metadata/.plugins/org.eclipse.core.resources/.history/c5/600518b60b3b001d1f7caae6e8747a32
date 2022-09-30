@@ -1,0 +1,5 @@
+package com.example.flightsdatajpa.service.impl;
+
+public class ChuyenBayServiceImpl {
+
+}

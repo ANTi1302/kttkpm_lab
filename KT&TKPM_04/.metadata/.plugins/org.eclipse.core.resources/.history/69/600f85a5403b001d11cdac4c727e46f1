@@ -1,0 +1,54 @@
+package com.example.flightsdatajpa.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.flightsdatajpa.entity.ChuyenBay;
+import com.example.flightsdatajpa.service.ChuyenBayService;
+
+@RestController
+@RequestMapping("/chuyen-bay")
+public class ChuyenBayController {
+
+	@Autowired
+	private ChuyenBayService chuyenBayService;
+	
+	@GetMapping("/")
+	public List<ChuyenBay> findAllChuyenBay() {
+		List<ChuyenBay> dsChuyenBay = chuyenBayService.getAllChuyenBay();
+		return dsChuyenBay;
+	}
+	
+	@GetMapping("/ga-den={gaDen}")
+	public List<ChuyenBay> findChuyenBaybyGaDI( @PathVariable String gaDen) {
+		List<ChuyenBay> dsChuyenBay = chuyenBayService.getAllChuyenBay();
+		List<ChuyenBay> result = new  ArrayList<ChuyenBay>();
+		dsChuyenBay.forEach(r -> {
+			if(r.getGaDen().equalsIgnoreCase(gaDen))
+				result.add(r);
+		});
+		return result;
+	}
+	
+	@GetMapping("/do-dai-duong-bay")
+	public List<ChuyenBay> findChuyenBaybyDoDaiDuongBay(
+			@RequestParam long  minDoDai,
+			@RequestParam long 	maxDoDai
+			) {
+		System.out.println(minDoDai + " : " + maxDoDai);
+		List<ChuyenBay> dsChuyenBay = chuyenBayService.getAllChuyenBay();
+		List<ChuyenBay> result = new  ArrayList<ChuyenBay>();
+		dsChuyenBay.forEach(r -> {
+			//if(r.getGaDen().equalsIgnoreCase(gaDen))
+				result.add(r);
+		});
+		return result;
+	}
+}

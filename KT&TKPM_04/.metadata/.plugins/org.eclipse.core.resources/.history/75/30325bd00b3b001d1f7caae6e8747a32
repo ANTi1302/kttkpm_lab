@@ -1,0 +1,28 @@
+package com.example.flightsdatajpa.service.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example.flightsdatajpa.entity.ChuyenBay;
+import com.example.flightsdatajpa.jpaRepository.ChuyenBayRepository;
+import com.example.flightsdatajpa.service.ChuyenBayService;
+
+@Service
+public class ChuyenBayServiceImpl implements ChuyenBayService{
+	private ChuyenBayRepository chuyenBayRepository;
+
+	@Override
+	public List<ChuyenBay> getAllChuyenBay() {
+		// TODO Auto-generated method stub
+		return chuyenBayRepository.findAll();
+	}
+
+	@Override
+	public ChuyenBay getChuyenBay(String maCB) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+}
