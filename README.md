@@ -7,6 +7,7 @@
 - [x] [**Box_Chat**](#-lab-1-n-box-chat-)
 - [x] [**SpringBootJWT**](#-lab-1-n-springboot-jwt-)
 - [x] [**SpringBoot_JPA**](#-lab-1-n-springboot-jpa-)
+- [x] [**SpringBoot_JPA**](#-lab-1-n-springboot-jpa-2)
 - [ ] ...
 
 <h1> Lab 1-n: ActiveMQDemo </h1>
@@ -73,3 +74,27 @@
   <img src="/image/lab4_finish.png" alt="" width="1000" height="480" >
 </p>
 
+<h1> Lab 1-n: SpringBoot JPA 2</h1>
+
+- Source: [**SpringBoot_JPA**](./demo_jpa)
+<p align="center">
+  <img src="/image/lab5_1.png" alt="" width="1000" height="480" >
+</p>
+<p align="center">
+  <img src="/image/lab5_2.png" alt="" width="1000" height="480" >
+</p>
+<p align="center">
+  <img src="/image/lab5_3.png" alt="" width="1000" height="480" >
+</p>
+<p align="center">
+  <img src="/image/lab5_4.png" alt="" width="1000" height="480" >
+</p>
+<p align="center">
+  <img src="/image/lab5_5.png" alt="" width="1000" height="480" >
+</p>
+<p align="center">
+  <img src="/image/lab5_6.png" alt="" width="1000" height="480" >
+</p>
+<p align="center">
+  <img src="/image/lab5_7.png" alt="" width="1000" height="480" >
+</p>
