@@ -78,23 +78,23 @@
 
 - Source: [**SpringBoot_JPA**](./demo_jpa)
 <p align="center">
-  <img src="/image/lab5_1.png" alt="" width="1000" height="480" >
+  <img src="/image/lab5_1.png" alt="" >
 </p>
 <p align="center">
-  <img src="/image/lab5_2.png" alt="" width="1000" height="480" >
+  <img src="/image/lab5_2.png" alt=""  >
 </p>
 <p align="center">
-  <img src="/image/lab5_3.png" alt="" width="1000" height="480" >
+  <img src="/image/lab5_3.png" alt="" >
 </p>
 <p align="center">
-  <img src="/image/lab5_4.png" alt="" width="1000" height="480" >
+  <img src="/image/lab5_4.png" alt="">
 </p>
 <p align="center">
-  <img src="/image/lab5_5.png" alt="" width="1000" height="480" >
+  <img src="/image/lab5_5.png" alt="" >
 </p>
 <p align="center">
-  <img src="/image/lab5_6.png" alt="" width="1000" height="480" >
+  <img src="/image/lab5_6.png" alt="">
 </p>
 <p align="center">
-  <img src="/image/lab5_7.png" alt="" width="1000" height="480" >
+  <img src="/image/lab5_7.png" alt="">
 </p>
