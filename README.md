@@ -7,7 +7,7 @@
 - [x] [**Box_Chat**](#-lab-1-n-box-chat-)
 - [x] [**SpringBootJWT**](#-lab-1-n-springboot-jwt-)
 - [x] [**SpringBoot_JPA**](#-lab-1-n-springboot-jpa-)
-- [x] [**SpringBoot_JPA**](#-lab-1-n-springboot-jpa-2)
+- [x] [**SpringBoot_JPA 2**](#-lab-1-n-springboot-jpa-2)
 - [ ] ...
 
 <h1> Lab 1-n: ActiveMQDemo </h1>
