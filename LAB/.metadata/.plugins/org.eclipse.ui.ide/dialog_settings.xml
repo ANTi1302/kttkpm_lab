@@ -12,6 +12,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="E:\ANTi_study\WWW\demo\web-customer-tracker"/>
+			<item value="E:\ANTi_study\kttkpm_lab\springboot-crud"/>
 			<item value="E:\ANTi_study\kttkpm_lab\springboot"/>
 			<item value="E:\ANTi_study\kttkpm_lab\demo_jpa"/>
 			<item value="E:\ANTi_study\kttkpm_lab\springboot_jpa_docker\spring_boot_api_jwt_ad-refresh_token_branch"/>
