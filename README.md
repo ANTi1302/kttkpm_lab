@@ -9,6 +9,7 @@
 - [x] [**SpringBoot_JPA**](#-lab-1-n-springboot-jpa-)
 - [x] [**SpringBoot_JPA 2**](#-lab-1-n-springboot-jpa-2) 
 - [x] [**SpringBoot_MQ**](#-lab-1-n-springboot-mq)
+- [x] [**SpringBoot_RestTemplate**](#-lab-1-n-springboot-resttemplate)
 - [ ] ...
 
 <h1> Lab 1-n: ActiveMQDemo </h1>
@@ -105,4 +106,11 @@
 - Source: [**SpringBoot_MQ**](./spring-boot-mq/Lab06_AMQ)
 <p align="center">
   <img src="/image/lab6.png" alt="" >
+</p>
+
+<h1> Lab 1-n: SpringBoot RestTemplate</h1>
+
+- Source: [**SpringBoot_RestTemplate**](./springboot-crud)
+<p align="center">
+  <img src="/image/lab7.png" alt="" >
 </p>
