@@ -12,6 +12,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\ANTi\OneDrive\Máy tính\Microservices_vaccination_citizen-main"/>
+			<item value="E:\ANTi_study\kttkpm_lab\circuitbreaker"/>
 			<item value="E:\ANTi_study\WWW\demo\web-customer-tracker"/>
 			<item value="E:\ANTi_study\kttkpm_lab\springboot-crud"/>
 			<item value="E:\ANTi_study\kttkpm_lab\springboot"/>
