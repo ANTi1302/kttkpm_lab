@@ -10,6 +10,7 @@
 - [x] [**SpringBoot_JPA 2**](#-lab-1-n-springboot-jpa-2) 
 - [x] [**SpringBoot_MQ**](#-lab-1-n-springboot-mq)
 - [x] [**SpringBoot_RestTemplate**](#-lab-1-n-springboot-resttemplate)
+- [x] [**SpringBoot_APIGateway**](#-lab-1-n-springboot-apigateway)
 - [ ] ...
 
 <h1> Lab 1-n: ActiveMQDemo </h1>
@@ -107,10 +108,26 @@
 <p align="center">
   <img src="/image/lab6.png" alt="" >
 </p>
-
 <h1> Lab 1-n: SpringBoot RestTemplate</h1>
 
 - Source: [**SpringBoot_RestTemplate**](./springboot-crud)
 <p align="center">
   <img src="/image/lab7.png" alt="" >
 </p>
+<h1> Lab 1-n: SpringBoot APIGateway</h1>
+
+- Source Discovery : [**SpringBoot_Discovery**](./apigateway)
+- Source ApiGateway : [**SpringBoot_ApiGateway**](./apigetway)
+- Source service1 : [**SpringBoot_Service1**](./service1)
+- Source service2 : [**SpringBoot_Service2**](./service2)
+<p align="center">
+  <img src="/image/lab8.png" alt="" >
+</p>
+<p align="center">
+  <img src="/image/lab8_2.png" alt="" >
+</p>
+<p align="center">
+  <img src="/image/lab8_3.png" alt="" >
+</p>
+
+
