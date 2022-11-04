@@ -11,7 +11,7 @@
 - [x] [**SpringBoot_MQ**](#-lab-1-n-springboot-mq)
 - [x] [**SpringBoot_RestTemplate**](#-lab-1-n-springboot-resttemplate)
 - [x] [**SpringBoot_APIGateway**](#-lab-1-n-springboot-apigateway)
-- [x] [**SpringBoot_SpringCloundConfig**](#-lab-1-n-spring-clound-config)
+- [x] [**SpringBoot_SpringCloudConfig**](#-lab-1-n-spring-cloud-config)
 - [ ] ...
 
 <h1> Lab 1-n: ActiveMQDemo </h1>
@@ -131,9 +131,9 @@
   <img src="/image/lab8_3.png" alt="" >
 </p>
 
-<h1> Lab 1-n: Spring Clound Config</h1>
+<h1> Lab 1-n: Spring Cloud Config</h1>
 
-- Source Clound Config : [**Spring_Clound_Config**](./configserver)
+- Source Cloud Config : [**Spring_Cloud_Config**](./configserver)
 <p align="center">
   <img src="/image/lab8_4.png" alt="" >
 </p>
