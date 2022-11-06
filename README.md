@@ -137,4 +137,11 @@
 <p align="center">
   <img src="/image/lab8_4.png" alt="" >
 </p>
+<p align="center">
+  <img src="/image/lab8_7.png" alt="" >
+</p>
+<p align="center">
+  <img src="/image/lab8_8.png" alt="" >
+</p>
+
 
