@@ -11,7 +11,7 @@
 - [x] [**SpringBoot_MQ**](#-lab-1-n-springboot-mq)
 - [x] [**SpringBoot_RestTemplate**](#-lab-1-n-springboot-resttemplate)
 - [x] [**SpringBoot_APIGateway**](#-lab-1-n-springboot-apigateway)
-- [x] [**SpringBoot_SpringCloudConfig**](#-lab-1-n-spring-cloud-config)
+- [x] [**SpringBoot_SpringCloudConfig_Retry_Circuit_RateLimiter**](#-lab-1-n-spring-cloud-config)
 - [x] [**SpringBoot_RedixCRUD**](#-lab-1-n-spring-boot-redix-crud)
 - [ ] ...
 
