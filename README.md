@@ -147,7 +147,7 @@
 
 <h1> Lab 1-n: Spring Boot Redix CRUD</h1>
 
-- Source Cloud Config : [**Spring_Cloud_Config**](./redix-crud)
+- Source Spring Boot Redix : [**Spring_Redix_CRUD**](./redix-crud)
 <p align="center">
   <img src="/image/lab9_1.png" alt="" >
 </p>
